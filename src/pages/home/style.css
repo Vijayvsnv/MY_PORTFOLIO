@@ -230,5 +230,39 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    filter: saturate(0.5);
+    width: 220px !important;
+    height: 220px !important;
+    min-height: unset !important;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border: 5px solid #fff;   /* white border */
+}
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border: 5px solid #fff;   /* white border */
+}
+@media (max-width: 576px) {
+  .intro_sec .h_bg-image {
+    width: 140px !important;   /* phone pe chhoti image */
+    height: 140px !important;
+    min-height: unset !important;
+    border-radius: 50%;
+    margin: 58px 113px;         /* thoda gap ke sath center */
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;           /* ensure center me dikhe */
+  }
 }
